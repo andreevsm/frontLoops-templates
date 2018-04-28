@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #00A184;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+.wrapper {
+    width: 600px;
+    height: 465px;
+    margin: 100px auto;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 8px 30px 5px rgba(0,0,0,0.25);
+}
+
+.wrapper__image {
+    top: 185px;
+    position: absolute;
+    width: 100%;
+}
+
+.card {
+    margin: 40px 70px;
+}
+
+.card__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.header__account {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    max-height: 38px;
+    max-width: 38px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.header__account:hover {
+    /* border: 5px solid #f1f1f1; */
+    box-shadow: 0px 0px 0px 4px #f1f1f1;
+    transition: box-shadow 0.3s linear;
+}
+
+.account__wrapper {
+    width: 20px;
+    height: 20px;
+    background: url('./img/account.svg') no-repeat center;
+    border-radius: 50%;
+    border: 9px solid #fff;
+}
+
+.card__description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: 400px;
+    font-size: 14px;
+    color: #a9a9a9;
+}
+
+.card__order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.order__name {
+    color: #777;
+}
+
+.order__value {
+    font-size: 20px;
+}
+
+.order__total {
+    color: #777;
+    font-weight: 700;
+    font-size: 20px;
+}
