@@ -9,45 +9,65 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  
-  <div class="dialog">
-    <div class="dialog__header">
-      <div class="header__logo">
-        MARK ZUCKERBERG
-      </div>
-      <div class="header__close"></div>
-    </div>
-    <div class="dialog__body">
-      <div class="body__date">
-        <span>TODAY</span>
-      </div>
-      <div class="body__message left">
-        <div class="message__time">
-          10:53
+
+  <div class="root">
+    <div class="chat">
+      <div class="chat__header">
+        <div class="chat__title">
+          <span class="chat__name">
+            Mark Zuckerberg
+          </span>
         </div>
-        <div class="message__content">
-          Hi, Mark! I made a new design for Messenger App.
-        </div>
+
+        <button class="chat__close"></button>
       </div>
-      <div class="body__message right">
+
+      <div class="chat__window">
+        <div class="chat__separator">
+          <div class="chat__date">
+            Today
+          </div>
+        </div>
+
+        <div class="message chat__message">
+          <div class="message__time">
+            10:53
+          </div>
+          <div class="message__content">
+            Hi, Mark! I made a new design for Messenger App.
+          </div>
+        </div>
+
+        <div class="message message_response chat__message">
           <div class="message__time">
             10:57
           </div>
-        <div class="message__content">
-          Yo! Send it to my assistant and we'll review it during the year.
+          <div class="message__content">
+            Yo! Send it to my assistant and we'll review it during the year.
+          </div>
         </div>
-      </div>
-      <div class="body__message left">
-        <div class="message__time">
-          11:03
+
+        <div class="message chat__message">
+          <div class="message__time">
+            11:03
+          </div>
+          <div class="message__content">
+            But Mark...
+          </div>
         </div>
-        <div class="message__content">
-          But Mark...
+
+        <div class="message message_error message_response chat__message">
+          <div class="message__content">
+            You were blocked by the user.
+          </div>
         </div>
+
+        <form class="chat__bottom" action="#">
+          <input type="text" class="chat__input" placeholder="Enter your message" />
+          <button class="chat__submit">Send</button>
+        </form>
       </div>
     </div>
-    <div class="dialog__message"></div>
   </div>
-
 </body>
 </html>
