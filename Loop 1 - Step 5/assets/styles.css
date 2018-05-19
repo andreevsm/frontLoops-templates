@@ -1,0 +1,59 @@
+body {
+    background: url('./img/background.jpg') no-repeat top;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+}
+
+.wrapper {
+    width: 400px;
+    height: 440px;
+    background: #fff;
+    margin: 100px auto;
+    border-radius: 4px;
+}
+
+.ticket {
+    padding: 40px;
+}
+
+.ticket__address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.address__title {
+    color: #008BCF;
+    font-weight: 700;
+    font-family: Prompt, sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0;
+}
+
+.address__from {
+    text-align: left;
+}
+
+.address__to {
+    text-align: right;
+}
+
+.address__border {
+    width: 25px;
+    height: 5px;
+    margin: auto;
+    background: #CDE6F4;
+}
+
+.address__city {
+    margin: 0;
+    color: #aaa;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
