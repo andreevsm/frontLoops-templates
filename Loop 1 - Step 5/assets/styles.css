@@ -2,7 +2,7 @@ body {
     background: url('./img/background.jpg') no-repeat top;
     width: 100%;
     height: 100%;
-    background-size: 100%;
+    background-size: cover;
     overflow: hidden;
     font-family: Roboto, sans-serif;
 }
