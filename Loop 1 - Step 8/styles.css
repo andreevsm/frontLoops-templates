@@ -1,0 +1,34 @@
+body {
+    font: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.root {
+    width: 1000px;
+    margin: 0 auto;
+    background: white;
+}
+
+.root__aside {
+    /* background: url('./img/background.jpg') center no-repeat; */
+    width: 360px;
+    position: relative;
+    height: 100%;
+}
+
+.aside__back-button {
+    appearance: none;
+    background: inherit;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+    color: #777;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    text-transform: uppercase;
+}
