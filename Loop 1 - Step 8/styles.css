@@ -13,11 +13,10 @@ body {
     width: 1000px;
     margin: 30px auto 0;
     display: flex;
-
+    align-items: flex-start;
 }
 
 .root__aside {
-    /* background: url('./img/background.jpg') center no-repeat; */
     width: 360px;
     position: relative;
     height: 100%;
@@ -39,10 +38,6 @@ body {
 .root__main {
     width: 640px;
     background: white;
-}
-
-.main__nav {
-    outline: 1px solid red;
 }
 
 .main__nav {
@@ -94,8 +89,7 @@ a:active {
 }
 
 .main__wrapper {
-    outline: 1px solid red;
-    padding: 115px 100px;
+    padding: 115px 100px 93px;
 }
 
 .main__subtitle {
@@ -107,6 +101,11 @@ a:active {
 
 .subtitle__span {
     font-weight: 700;
+}
+
+.main__description {
+    display: flex;
+    flex-direction: row;
 }
 
 .description__frame {
@@ -125,4 +124,30 @@ a:active {
     justify-content: center;
     border-radius: 50%;
     background: rgba( 255, 255, 255, 0.8);
+}
+
+.description__button {
+    margin-top: 10px;
+    position: relative;
+    appearance: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    background: inherit;
+    border: none;
+    font-size: 12px;
+}
+
+.description__button:after {
+    position: absolute;
+    font-size: 12px;
+    content: url('./img/arrow-forward.svg');
+    right: -30px;
+}
+
+.description__text {
+    margin-left: 45px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    line-height: 1.9;
 }
