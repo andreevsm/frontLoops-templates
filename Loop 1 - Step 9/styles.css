@@ -180,6 +180,10 @@ body {
     display: flex;
 }
 
+.item__price--active {
+    color: #81CD66;
+}
+
 .price__null {
     font-size: 10px;
 }
