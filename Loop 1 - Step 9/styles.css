@@ -10,16 +10,19 @@ body {
     background: #FBCC7B;
 }
 
-.card__aside::-webkit-scrollbar {
+.card__aside::-webkit-scrollbar,
+.card__main::-webkit-scrollbar {
     width: 8px;
 }
 
-.card__aside::-webkit-scrollbar-thumb {
+.card__aside::-webkit-scrollbar-thumb,
+.card__main::-webkit-scrollbar-thumb {
     background-color: #777;
     border-radius: 10px;
 }
 
-.card__aside::-webkit-scrollbar-track {
+.card__aside::-webkit-scrollbar-track,
+.card__main::-webkit-scrollbar-track {
   background: inherit;
 }
 
@@ -28,6 +31,8 @@ body {
     height: 450px;
     margin: 100px auto;
     background: white;
+    display: flex;
+    flex-direction: row;
     font-family: Roboto, sans-serif;
     font-size: 16px;
 }
@@ -40,7 +45,20 @@ body {
     background: #F2F2F2;
 }
 
+.card__main {
+    padding: 40px 40px 0;
+    height: 100%;
+    width: 500px;
+    overflow: hidden;
+    background: #fff;
+}
+
 .card__aside:hover {
+    overflow: auto;
+    padding-right: 32px;
+}
+
+.card__main:hover {
     overflow: auto;
     padding-right: 32px;
 }
@@ -88,4 +106,80 @@ body {
 
 .content__item:hover {
     border: 2px solid #899CC6;
+}
+
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.header__value {
+    font-weight: 600;
+    display: flex;
+}
+
+.value__main {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main__hr {
+    width: 100%;
+    background: #ddd;
+    height: 1px;
+}
+
+.main__item {
+    width: 100%;
+    display: flex;
+    margin: 40px 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item__remove {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove__image {
+    height: 14px;
+    width: 14px;
+}
+
+.description__title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.description__subtitle {
+    font-size: 13px;
+    color: #888;
+    line-height: 2;
+}
+
+.item__left {
+    display: flex;
+    align-items: center;
+}
+
+.item__description {
+    margin-left: 30px;
+}
+
+.item__price {
+    color: #8B9CC7;
+    font-weight: 700;
+    display: flex;
+}
+
+.price__null {
+    font-size: 10px;
 }
