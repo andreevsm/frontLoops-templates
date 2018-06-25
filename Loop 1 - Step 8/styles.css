@@ -1,16 +1,19 @@
 body {
-    font: Roboto, sans-serif;
     font-size: 16px;
+    background: #F9EAE9;
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .root {
     width: 1000px;
-    margin: 0 auto;
-    background: white;
+    margin: 30px auto 0;
+    display: flex;
+
 }
 
 .root__aside {
@@ -31,4 +34,95 @@ body {
     left: 30px;
     top: 30px;
     text-transform: uppercase;
+}
+
+.root__main {
+    width: 640px;
+    background: white;
+}
+
+.main__nav {
+    outline: 1px solid red;
+}
+
+.main__nav {
+    padding: 30px;
+}
+
+.nav__list {
+    list-style-type: none;
+    float: right;
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__item {
+    display: inline-block;
+}
+
+a {
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    color: #989898;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+a:hover,
+a:active {
+    color: black;
+}
+
+.main__title {
+    font-size: 60px;
+    position: relative;
+    line-height: 1.1;
+    font-family: "Playfair Display";
+}
+
+.title__span:after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 4px;
+    right: 0;
+    bottom: 20px;
+    background: black;
+}
+
+.main__wrapper {
+    outline: 1px solid red;
+    padding: 115px 100px;
+}
+
+.main__subtitle {
+    padding-top: 26px;
+    padding-bottom: 40px;
+    font-family: "Playfair Display";
+    font-size: 18px;
+}
+
+.subtitle__span {
+    font-weight: 700;
+}
+
+.description__frame {
+    position: relative;
+}
+
+.description__frame:after {
+    content: url('./img/play.svg');
+    position: absolute;
+    top: 37px;
+    left: 67px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba( 255, 255, 255, 0.8);
 }
