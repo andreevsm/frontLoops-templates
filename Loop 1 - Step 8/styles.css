@@ -11,7 +11,7 @@ body {
 
 .root {
     width: 1000px;
-    margin: 30px auto 0;
+    margin: 100px auto;
     display: flex;
     align-items: flex-start;
 }
@@ -26,13 +26,29 @@ body {
     appearance: none;
     background: inherit;
     border: none;
-    font-weight: 600;
+    font-weight: 500;
+    cursor: pointer;
     font-size: 13px;
     color: #777;
     position: absolute;
+    vertical-align: middle;
     left: 30px;
     top: 30px;
     text-transform: uppercase;
+}
+
+.aside__back-button span {
+    display: inline-block;
+}
+
+.aside__back-button:hover {
+    color: #333;
+}
+
+.button__icon {
+    width: 16px;
+    display: inline-block;
+    vertical-align: text-bottom;
 }
 
 .root__main {
