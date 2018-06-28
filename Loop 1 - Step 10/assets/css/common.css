@@ -116,7 +116,7 @@ input {
     align-items: center;
 }
 
-.content__promo {
+.promo {
     width: 400px;
 }
 
@@ -229,4 +229,21 @@ input {
 .preview__more-inner {
     display: inline-block;
     vertical-align: middle;
+}
+
+.image-promo {
+    display: flex;
+    align-items: center;
+}
+
+.image-promo__content {
+    flex-grow: 1;
+}
+
+.image-promo__preview {
+    flex-basis: 400px;
+}
+
+.image-promo__image {
+    max-width: 100%;
 }

@@ -1,4 +1,4 @@
-.ut-button {
+.ui-button {
     background: #EA635C;
     display: inline-block;
     vertical-align: middle;
@@ -14,9 +14,9 @@
     transition: background-color 0.15s ease-in-out;
 }
 
-.ut-button:hover {
+.ui-button:hover {
     background: #DB5B56;
 }
-.ut-button:active {
+.ui-button:active {
     top: 1px;
 }
