@@ -247,3 +247,50 @@ input {
 .image-promo__image {
     max-width: 100%;
 }
+
+.runners {
+    background: url(../../img/runners.jpg) no-repeat 50%;
+    background-size: cover;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.runners__wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.runners__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.runners__content {
+    min-height: 600px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.promo__light {
+    color: #fff;
+}
+
+.promo__light .promo__text {
+    border-left-color: #fff;
+    opacity: 1;
+    color: white;
+}
+
+.runners::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
