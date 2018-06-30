@@ -1,0 +1,41 @@
+.nav__links {
+    font-size: 13px;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+.links__item {
+    display: inline-block;
+    margin: 0 15px;
+    opacity: 0.5;
+    position: relative;
+    cursor: pointer;
+}
+
+.links__item:hover {
+    opacity: 1;
+}
+
+.links__item:hover::after {
+    opacity: 0.5;
+}
+
+.links__item:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    padding-top: 10px;
+    border-bottom: 2px solid #333;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.links__item:first-of-type {
+    margin-left: 0;
+}
+
+.links__item a {
+    color: #333;
+}

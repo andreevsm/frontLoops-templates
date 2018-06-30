@@ -1,3 +1,7 @@
 @import url('./common.css');
 @import url('./components/input.css');
 @import url('./components/button.css');
+@import url('./components/wrapper.css');
+@import url('./components/promo.css');
+@import url('./components/preview.css');
+@import url('./components/nav.css');
