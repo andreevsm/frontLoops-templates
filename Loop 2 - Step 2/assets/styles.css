@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333333;
+    font-family: Roboto, sans-serif;
+}
+
+.root {
+    width: 500px;
+    background: #FFEB4B;
+    margin: 25px auto;
+}
+
+.settings__account {
+    padding: 60px;
+    font-size: 20px;
+}
+
+.settings__title {
+    display: inline-block;
+}
+
+.settings__close {
+    font-size: 30px;
+    float: right;
+    color: #7F752B;
+    margin-top: -5px;
+}
