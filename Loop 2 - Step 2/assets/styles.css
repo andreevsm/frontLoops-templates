@@ -9,6 +9,46 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a7a7a7;
+}
+
+input,
+textarea {
+    outline: none;
+    padding: 7px 0;
+    margin-top: 7px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #807474;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+}
+
 .root {
     width: 500px;
     background: #FFEB4B;
@@ -29,4 +69,23 @@ body {
     float: right;
     color: #7F752B;
     margin-top: -5px;
+}
+
+.settings__card {
+    background: white;
+    width: 500px;
+    margin-left: 60px;
+    padding: 40px 40px 50px;
+    position: relative;
+}
+
+.card__image-wrapper {
+    position: absolute;
+    top: -35px;
+}
+
+.card__img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
 }
