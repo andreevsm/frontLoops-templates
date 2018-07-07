@@ -24,8 +24,13 @@ body {
 }
 
 .tabs__item {
+    cursor: pointer;
     opacity: 0.5;
     margin-left: 60px;
+}
+
+.tabs__item:hover {
+    opacity: 0.6;
 }
 
 .tabs__item:first-of-type {
@@ -89,10 +94,16 @@ body {
 }
 
 .controls__nav {
+    cursor: pointer;
     position: absolute;
     width: 100px;
     height: 100px;
-    background: #F5B6B6;
+    opacity: 0.4;
+    background: #fff;
+}
+
+.controls__nav:hover {
+    opacity: 0.6;
 }
 
 .controls__nav::before {
@@ -121,4 +132,32 @@ body {
 
 .controls__nav_next::before {
     border-left-color: #000;
+}
+
+.controls__button {
+    top: 100%;
+    transform: translateY(-50%);
+    width: 33.33%;
+    position: absolute;
+    padding: 0 20px;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+}
+
+.button {
+    background: #131313;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out;
 }
