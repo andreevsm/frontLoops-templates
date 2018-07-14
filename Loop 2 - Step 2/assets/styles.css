@@ -35,6 +35,20 @@ textarea::placeholder {
 
 textarea {
     min-height: 100px;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background: inherit;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    opacity: 0.7;
+}
+
+button:hover {
+    opacity: 1;
 }
 
 .form-control {
@@ -67,13 +81,20 @@ textarea {
 .settings__close {
     font-size: 30px;
     float: right;
-    color: #7F752B;
+    color: #000;
+    opacity: 0.5;
     margin-top: -5px;
+    cursor: pointer;
+}
+
+.settings__close:hover {
+    opacity: 1;
 }
 
 .settings__card {
     background: white;
     width: 500px;
+    box-shadow: 0 22px 50px rgba(14,21,47, .2), 0 8px 20px rgba(14,21,47, .2);
     margin-left: 60px;
     padding: 40px 40px 50px;
     position: relative;
@@ -88,4 +109,17 @@ textarea {
     width: 65px;
     height: 65px;
     border-radius: 50%;
+}
+
+.setting__footer {
+    padding: 27px 60px;
+
+}
+
+.footer__buttons {
+    text-align: right;
+}
+
+.buttons__control {
+    margin-left: 40px;
 }
